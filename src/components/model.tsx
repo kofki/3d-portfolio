@@ -7,13 +7,13 @@ import * as THREE from 'three';
 
 const Model: React.FC = () => {
   // This loads your model from the public/models folder.
-  const { scene } = useGLTF("/models/cute_spooky_cat.glb");
+  const { scene } = useGLTF("/models/baby_duck.glb");
   
   const modelRef = useRef<THREE.Object3D | null>(null);
   // Animate the model each frame
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.01; // continuous rotation
+      modelRef.current.rotation.y += 0.04 ; // continuous rotation
     }
   });
 

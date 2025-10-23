@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Replace your name or logo here */}
         <Link href="/" className="text-2xl font-bold text-[#04D9FF]">
-          yourname.dev
+          kenzo.dev
         </Link>
 
         {/* Update the links below to match your sections */}

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ScrollReveal from "./scrollReveal";
+import emailjs from "@emailjs/browser"
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -17,8 +18,17 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Thanks ${formData.name}, your message has been sent!`);
-    // TODO: Replace this with actual form submission logic (e.g., emailjs, API route)
+    emailjs.sendForm(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+      e.target,
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    ).then((response)=>{
+      alert("Message sent successfully");
+    },
+    (error) => {
+      alert("Error Sending message");
+    })
   };
 
   return (

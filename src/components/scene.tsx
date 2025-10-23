@@ -23,7 +23,7 @@ const Scene: React.FC = () => {
           // x: 7 = 7 units to the right
           // y: 2 = 2 units up
           // z: 8 = 8 units away from center
-          fov: 50 // Field of view (50 degrees) - lower = more zoomed in, higher = wider view
+          fov: 40 // Field of view (50 degrees) - lower = more zoomed in, higher = wider view
           // Try: 35-45 for tight zoom, 50-60 for normal, 70+ for wide angle
         }}
       >
@@ -31,7 +31,7 @@ const Scene: React.FC = () => {
         
         {/* Ambient light: Overall scene brightness, no shadows */}
         <ambientLight 
-          intensity={0.5} // 0.5 = medium brightness (range: 0-1+)
+          intensity={1} // 0.5 = medium brightness (range: 0-1+)
           // Try: 0.3 for dim, 0.5 for normal, 0.8 for bright
         />
         
@@ -40,8 +40,8 @@ const Scene: React.FC = () => {
           position={[5, 5, 5]} // [x, y, z] - Where light comes from
           // [5, 5, 5] = from upper-right-front
           // Try: [10, 10, 10] for more dramatic shadows
-          intensity={2} // 2 = bright (range: 0-10+)
-          // Try: 1 for subtle, 2-3 for normal, 5+ for harsh
+          intensity={1} // 2 = bright (range: 0-10+)
+          // Try: 1 for s ubtle, 2-3 for normal, 5+ for harsh
         />
 
         {/* Load your 3D model here */}
@@ -51,7 +51,7 @@ const Scene: React.FC = () => {
 
         {/* OrbitControls: Lets users drag to rotate the model */}
         <OrbitControls 
-          enableZoom={false} // false = disable scroll zoom
+          enableZoom={true} // false = disable scroll zoom
           // Set to true if you want zoom enabled
           // Additional options you can add:
           // enablePan={false} - disable right-click drag

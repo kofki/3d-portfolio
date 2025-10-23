@@ -9,15 +9,22 @@ import ScrollReveal from "./scrollReveal";
 const projects = [
   {
     id: 1,
-    title: "DoraBird",
+    title: "3D portfolio",
+    description: "It looks good doesn't it?",
+    image: "/images/thumbnail3dportfolio.png",
+    link: "/#",
+  },
+  {
+    id: 2,
+    title: "Physics Phuzz",
     description: "Fly through multiple universes with DoraBird!",
     image: "/images/thumbnaildora.png",
     link: "https://yourprojectlink.com",
   },
   {
-    id: 2,
-    title: "DoraBird",
-    description: "Fly through multiple universes with DoraBird!",
+    id: 3,
+    title: "ByteStorm",
+    description: "example",
     image: "/images/thumbnaildora.png",
     link: "https://yourprojectlink.com",
   },

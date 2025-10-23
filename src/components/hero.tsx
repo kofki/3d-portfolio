@@ -13,19 +13,19 @@ const Hero: React.FC = () => {
       {/* ===================== LEFT SIDE: TEXT ===================== */}
       <motion.div
         // Animation: Slides in from left
-        initial={{ opacity: 0, x: -40 }}  // x: -40 = starts 40px to the left
+        initial={{ opacity: 0, x: -80 }}  // x: -40 = starts 40px to the left
         animate={{ opacity: 1, x: 0 }}    // x: 0 = normal position
         transition={{ duration: 1 }}      // duration: 1 = takes 1 second
         className="flex-1 space-y-6 text-center md:text-left"
       >
         {/* Replace your name here */}
         <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-          hi, i&apos;m <span className="text-[#04D9FF]">your name</span>
+          hi, I&apos;m <span className="text-[#F58700]">kenzo fukuda</span>
         </h1>
 
         {/* Replace your role or title here */}
         <h2 className="text-2xl md:text-3xl text-gray-300">
-          a creative <span className="text-[#04D9FF]">developer</span> @ uf
+          a <span className="text-[#F58700]">computer science student</span> @ university of florida
         </h2>
 
         {/* Replace this text with your short bio or tagline */}

@@ -9,7 +9,7 @@ const About = () => {
 
       {/* Replace this paragraph with your personal story */}
       <p className="max-w-2xl text-center text-gray-600 leading-relaxed">
-        hello! i&apos;m <span className="font-semibold text-indigo-600">your name</span>, a passionate web developer
+        hello! i&apos;m <span className="font-semibold text-indigo-600">Kenzo Fukuda</span>, a passionate web developer
         who loves creating interactive and visually appealing websites using technologies like
         <span className="font-semibold"> Next.js, Three.js, and TypeScript</span>.
       </p>
