@@ -21,7 +21,7 @@ const ContactForm: React.FC = () => {
     emailjs.sendForm(
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      e.target,
+      e.target as HTMLFormElement,
       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
     ).then((response)=>{
       alert("Message sent successfully");
